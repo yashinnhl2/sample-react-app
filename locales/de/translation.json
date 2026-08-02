@@ -1,0 +1,12 @@
+{
+  "dashboard.welcome_back_to_app": "Willkommen zurück in der App",
+  "dashboard.logging_out": "Abmelden...",
+  "dashboard.log_out": "Abmelden",
+  "dashboard.your_projects": "Ihre Projekte",
+  "dashboard.you_dont_have_any_projects_yet_create_yo": "Sie haben noch keine Projekte. Erstellen Sie Ihr erstes!",
+  "dashboard.view": "Anzeigen",
+  "dashboard.delete": "Löschen",
+  "dashboard.create_new_project": "Neues Projekt erstellen",
+  "dashboard.recent_activity": "Aktuelle Aktivitäten",
+  "dashboard.no_recent_activity_to_show": "Keine aktuellen Aktivitäten anzuzeigen"
+}
