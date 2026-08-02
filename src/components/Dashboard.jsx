@@ -5,7 +5,7 @@ export default function Dashboard({ user, projects }) {
     <div className="dashboard">
       <header>
         <h1>
-          Welcome back {user.name}!
+          Welcome back to app {user.name}!
         </h1>
         <button onClick={() => alert("Logging out...")}>
           Log out
