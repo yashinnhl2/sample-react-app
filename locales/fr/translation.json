@@ -1,0 +1,12 @@
+{
+  "dashboard.welcome_back_to_app": "Bienvenue de nouveau dans l'application",
+  "dashboard.logging_out": "Déconnexion...",
+  "dashboard.log_out": "Se déconnecter",
+  "dashboard.your_projects": "Vos projets",
+  "dashboard.you_dont_have_any_projects_yet_create_yo": "Vous n'avez pas encore de projets. Créez le vôtre !",
+  "dashboard.view": "Voir",
+  "dashboard.delete": "Supprimer",
+  "dashboard.create_new_project": "Créer un nouveau projet",
+  "dashboard.recent_activity": "Activité récente",
+  "dashboard.no_recent_activity_to_show": "Aucune activité récente à afficher"
+}
