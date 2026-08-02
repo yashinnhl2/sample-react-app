@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LoginForm from "./components/LoginForm";
 import Dashboard from "./components/Dashboard";
 import SettingsPage from "./pages/SettingsPage";
+import { useTranslation } from 'react-i18next';
 
 const SAMPLE_USER = { name: "Yasin" };
 const SAMPLE_PROJECTS = [
@@ -12,7 +13,8 @@ const SAMPLE_PROJECTS = [
 const PAGES = ["Login", "Dashboard", "Settings"];
 
 export default function App() {
-  const [page, setPage] = useState("Login");
+    const { t } = useTranslation();
+const [page, setPage] = useState(t('app.login'));
   const [loggedIn, setLoggedIn] = useState(false);
 
   return (
@@ -40,15 +42,15 @@ export default function App() {
 
       {/* Page content */}
       <div style={{ background: "#fff", padding: 32, borderRadius: 12, border: "1px solid #e4e4e7" }}>
-        <p>This is my app</p>
+        <p>{t('app.this_is_my_app')}</p>
         {page === "Login" && (
-          <LoginForm onLogin={() => { setLoggedIn(true); setPage("Dashboard"); }} />
+          <LoginForm onLogin={() => { setLoggedIn(true); setPage(t('app.dashboard')); }} />
         )}
         {page === "Dashboard" && (
           <Dashboard user={SAMPLE_USER} projects={SAMPLE_PROJECTS} />
         )}
         {page === "Settings" && (
-          <SettingsPage user={SAMPLE_USER} onSave={(data) => console.log("Saved:", data)} />
+          <SettingsPage user={SAMPLE_USER} onSave={(data) => console.log(t('app.saved'), data)} />
         )}
       </div>
     </div>
